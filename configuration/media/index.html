@@ -771,20 +771,50 @@
 <td align="center">1</td>
 <td>Ethernet</td>
 <td><a href="https://www.home-assistant.io/components/media_player.plex">Plex</a> / <a href="https://www.home-assistant.io/components/sensor.plex/">Plex Activity Monitor</a></td>
-<td>See below</td>
+<td>(1) See below</td>
 </tr>
 <tr>
 <td><a href="https://www.pimusicbox.com/">Pi Music Box</a></td>
 <td align="center">1</td>
 <td>Ethernet</td>
 <td><a href="https://www.home-assistant.io/integrations/mpd/">mpd</a></td>
-<td>See below</td>
+<td>(2) See below</td>
+</tr>
+<tr>
+<td><a href="https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-Alexa-Black/dp/B00X4WHP5E">Amazon Echo v1</a></td>
+<td align="center">1</td>
+<td>Wi-Fi</td>
+<td><a href="https://github.com/custom-components/alexa_media_player">Alexa Media Player</a></td>
+<td>(3) See below</td>
+</tr>
+<tr>
+<td><a href="https://www.amazon.com/Amazon-Echo-Dot-Portable-Bluetooth-Speaker-with-Alexa-White/dp/B015TJD0Y4">Amazon Echo Dot</a></td>
+<td align="center">1</td>
+<td>Wi-Fi</td>
+<td><a href="https://github.com/custom-components/alexa_media_player">Alexa Media Player</a></td>
+<td>(3) See below</td>
+</tr>
+<tr>
+<td><a href="https://www.ecobee.com/en-ca/smart-thermostats/smart-wifi-thermostat-with-voice-control/">Alexa in Ecobee4</a></td>
+<td align="center">1</td>
+<td>Wi-Fi</td>
+<td><a href="https://github.com/custom-components/alexa_media_player">Alexa Media Player</a></td>
+<td>(4) See below</td>
+</tr>
+<tr>
+<td></td>
+<td align="center"></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<p>Plex server runs in a Raspberry Pi 4, primarily configured as an <a href="https://www.openmediavault.org/">Openmediavault</a> server, with external USB hard drives. </p>
-<p>The Pi Music Box is a Raspberry Pi 3B+.  It scans and picks up audio files from the same Openmediavault server that runs Plex and provides additional music streaming through the home theatre speakers. </p>
-<p>There are Google Home and Amazon Echo devices configured throughout the house that can play stream from Pi Music Box.  These are explained in Voice Assistants section. </p>
+<p>(1) Plex server runs in a Raspberry Pi 4, primarily configured as an <a href="https://www.openmediavault.org/">Openmediavault</a> server, with external USB hard drives. </p>
+<p>(2) The Pi Music Box is a Raspberry Pi 3B+.  It scans and picks up audio files from the same Openmediavault server that runs Plex and provides additional music streaming through the home theatre speakers. </p>
+<p>(3) Amazon echo devices configured via Nabu Casa (See Voice Assistants Section) do not function as media players.  This necessitates using a custom integration <a href="https://github.com/custom-components/alexa_media_player">Alexa Media Player</a>.  I had purchased my first Amazon Echo when it was introduced in the USA (not available in Canada, then) so, it got integrated to my Amazon USA account and I had great difficulty in passing the verification step (which simply kept blanking out, instead of sending OTP to my phone).  I enabled Two-Factor Authentication (TFA) for my Amazon account and this helped me generate OTP locally using my Authenticator app and complete the process. </p>
+<p>(4) Ecobee4 has a built-in Alexa voice assistant which doubles (triples? considering it is primarily a thermostat) up as a medica player via the above custom integration. </p>
+<p>There are Google Home devices configured throughout the house that can play from thier cloud services and stream from Pi Music Box.  These got easily configured as media players via Nabu Casa integration. These are explained in Voice Assistants section. </p>
                 
               
               
